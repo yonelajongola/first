@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end developer - Yonela Jongola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yonela Jongola is a front-end developer based in East London,
+     check out his projects and contact him for job inquiries">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+     crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+      }
+      .card {
+        width: 400px;
+        height: 450px;
+        border-radius: 30px;
+        overflow: hidden;
+        border: 2px solid whitesmoke;
+        position: relative;
+        align-items: center
+        justify-content:center;
+        display: center;
+        
+
+
+      }
+      .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        align-content: center
+        align-items:center
+        position:stretch
+      }
+      .card-body {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        color: white;
+        position: absolute;
+        backdrop-filter: blur(8px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: 1.9s;
+        right: -100%;
+        padding-bottom: 10px
+      }
+      .card:hover .card-body {
+        right: 0;
+      }
+      .card-title {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 500;
+      }
+      .card-sub {
+        text-decoration: capitalize;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .card-info {
+        font-size: 50px;
+        line-height: 20px;
+        margin: 40px 0;
+        font-weight: 400;
+      }
+      .card-btn {
+        color: #162225;
+        background: #c3e6e7;
+        width: 112px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      body{
+        text-align: center;
+
+        border: 1px solid#8a109f;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        text-decoration: underline;
+        color: rgb(37, 190, 255);
+        font-style: italic;
+        text-align: end;
+        margin: 3px;
+        padding-bottom: 12px;
+      }
+      h1 {
+        color: rgb(54, 49, 62);
+        border: #162225;
+        border-radius: 10%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        font-size: larger;
+        font-style: italic;
+        font-weight: 500;
+        padding: 20px 1px;
+      }
+      button {
+        border-radius: 25px;
+        box-shadow: 2px 1px rgba(200, 191, 219, 0.532);
+        margin: 30px auto;
+        display: block;
+        background-color: white;
+        border: 1px solid #412c75;
+        color: #8a109f;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 19px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: gray;
+        background: #64b5b6;
+      }
+      img {
+      }
+      p {
+        font-size: medium;
+        line-height: 1.5;
+        margin: 10px 10px;
+        padding-top: 20px;
+        position: relative;
+      }
+      .footer {
+        text-align: right;
+        font-size: small;
+        font-family: monospace;
+      }
+     .none { 
+       top: 25%;
+       left: 490px;
+       font-size: medium;
+        line-height: 1.2;
+        margin: 10px;
+        padding-top: 10px;
+        position: absolute;
+        font-size: 20px
+     }
+    
+    </style>
+  </head>
+  <body>
+    <h1>
+      Best Places to Visit in South Africa
+    </h1>
+
+    <h2>
+      Affordable Holiday in South Africa
+
+    </h2> 
+    <div class="card">
+      
+      <img
+      src="https://media.cntraveler.com/photos/58f7b24957db6e4495ce974c/master/w_1920%2Cc_limit/chapmans-peak-drive-south-africa-GettyImages-635870472.jpg"
+      alt="South Africa"
+      loading="lazy"
+      class="card-img"
+      />
+      <div class="card-body">
+        <h3 class="card-title">CPT</h3>
+        <p class="card-sub">CAPE TOWN</p>
+        <p class="card-info">20% Discount</p>
+        <button class="card-btn">BOOK NOW</button>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="row">
+    <div class="card">
+      
+      <img
+        src="https://media.cntraveler.com/photos/58f7b23aaae67d6f485215d5/master/w_1920%2Cc_limit/golden-gate-national-park-free-state-south-africa-GettyImages-182830622.jpg"
+        sizes="30px"
+        alt="South Africa"
+        class="card-img"
+      />
+      <div class="card-body">
+        <h3 class="card-title">FREE STATE</h3>
+        <p class="card-sub">GOLDEN GATE</p>
+        <p class="card-info">20% Discount</p>
+       
+      </div>
+    </div>
+    <div class="card">
+      
+        <img
+          src="https://media.cntraveler.com/photos/58f84ce457db6e4495ce9757/master/w_1920%2Cc_limit/jacaranda-trees-pretoria-south-africa-GettyImages-542087241.jpg"
+          alt="South Africa"
+          class="card-img"
+          
+        />
+        <div class="card-body">
+          <h3 class="card-title">JHB</h3>
+          <p class="card-sub">PRETORIA</p>
+          <p class="card-info">20% Discount</p>
+         
+        </div>
+      </div>
+      <div class="card">
+      
+          <img
+            src="https://media.cntraveler.com/photos/58f8fff02867946a9cbe1f0b/master/w_1920%2Cc_limit/hole-in-the-wall-eastern-cape-south-africa-GettyImages-134344759.jpg"
+            alt="South Africa"
+            width="30"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h3 class="card-title">KZN</h3>
+            <p class="card-sub">WETLAND PARK</p>
+            <p class="card-info">20% Discount</p>
+            
+          </div>
+      
+      </div>
+    </div>
+    <br>
+    <hr />
+    <p class="none">
+      <strong> Cape Town </strong> the legislative capital of South Africa. It
+      is the country's oldest city and the seat of the Parliament of South
+      Africa. It is the country's second-largest city, after Johannesburg, and
+      the largest in the Western Cape. The city is part of the City of Cape Town
+      metropolitan municipality. The city is known for its harbour, its natural
+      setting in the Cape Floristic Region, and for landmarks such as
+      <em> Table Mountain </em> and <em> Cape Point </em>. In 2014, Cape Town
+      was named the best place in the world to visit by The New York Times and
+      similarly by The Daily Telegraph in 2016. Located on the shore of Table
+      Bay, the City Bowl area of Cape Town is the oldest urban area in the
+      Western Cape, with a significant cultural heritage. It was founded by the
+      Dutch East India Company (VOC) as a supply station for Dutch ships sailing
+      to East Africa, India, and the Far East.<em> Jan van Riebeeck's </em>
+      arrival on 6 April 1652 established the VOC Cape Colony, the first
+      permanent European settlement in South Africa. Cape Town outgrew its
+      original purpose as the first European outpost at the Castle of Good Hope,
+      becoming the economic and cultural hub of the Cape Colony. Until the
+      Witwatersrand Gold Rush and the development of Johannesburg, Cape Town was
+      the largest city in southern Africa.
+<br>
+      <a href="https://en.wikipedia.org/wiki/Cape_Town" target="_blank">
+        📖 Learn More on wikipedia</a
+      >
+    </p>
+    <p class="footer">
+      This page was built by:
+      <strong> Yonela Jongola</strong>
+    </p>
+    <script>
+      function SecretRecipes() {
+        let name = prompt("What's your name?");
+        let Email = prompt("what is your email address?");
+        if (name.length > 0) {
+          alert("HI " + name + " . Thank you. we'll be in touch soon💓");
+        } else {
+          alert("Enter your details please🚨");
+        }
+      }
+      let SecretRecipesButton = document.querySelector("button");
+
+      SecretRecipesButton.addEventListener("click", SecretRecipes);
+      
+    </script>
+  </body>
+</html>
